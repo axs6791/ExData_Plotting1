@@ -1,6 +1,6 @@
 ## plot1.R
 
-## Creates an histogram of the global active power based
+## Defines the script to create an histogram of the global active power based
 ## on the Electric Power Consumption dataset for the period for a two day period
 ## in February 2007.
 
