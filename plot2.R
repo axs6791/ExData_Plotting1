@@ -10,6 +10,8 @@ powerDF<-loadData()
 png("plot2.png", width=480, height=480)
 plot(powerDF$Global_active_power, type='l', xlab='', 
      ylab="Global Active Power (kilowatts)", xaxt="n")
+
+# Adds the x-axis based on dates
 firstFriday<-min(which(powerDF$Date=="2/2/2007"))
 axis(1, at=c(0,firstFriday, length(powerDF$Global_active_power)), 
      labels=c('Thu', 'Fri', 'Sat'))
